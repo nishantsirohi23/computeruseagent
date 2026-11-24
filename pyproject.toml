@@ -1,0 +1,16 @@
+[project]
+name = "cua"
+version = "0.1.0"
+description = "macOS computer-use agent: AX-based RL environment, grounding/step data collection, 50-task benchmark"
+requires-python = ">=3.11"
+dependencies = [
+    "pyobjc-framework-ApplicationServices",
+    "pyobjc-framework-Quartz",
+    "pyobjc-framework-Cocoa",
+    "pillow",
+    "mlx-vlm>=0.7.10",
+    "datasets",
+]
+
+[tool.setuptools.packages.find]
+include = ["cua*"]
